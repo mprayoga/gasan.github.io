@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 1px solid black; */
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(233, 224, 224, 0.74);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    z-index: 10000;
+    transition: 0.6s;
+}
+.logo{
+    width: 50%;
+    height: 10vh;
+    position: relative;
+    transition: 0.6s;
+}
+.logo img{
+    width: 190px;
+    height: 62px;
+    margin-left: 20px;
+    padding-bottom: 0px;
+}
+.sticky{
+    padding: 5px 50px;
+    background: linear-gradient(57deg, #c5bb00, #ffffff);
+
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 300;
+    font-weight: 300;
+    transition: 0.6s;
+}
+
+header.sticky .logo{
+    color: #000;
+}
+header.sticky  ul li a{
+    color: #000;
+}
+header a{
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+header a.active,a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+.toggle{
+    display: none;
+}
+
+
+
+/* style home */
+.home{
+    background: url('../Image/yes/\(1\).jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    padding: 45px;
+}
+.home h1{
+	text-align: center;
+	color: #ffffff;
+	font-size: 40px;
+    margin-top: 5em;
+	text-transform: uppercase;
+    text-shadow: 4px 4px 0px rgba(39, 38, 38, 0.986);
+    font-family: 'Crimson Pro', serif;
+}
+.home p{
+    font-family: 'Crimson Pro', serif;
+	font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.info-home{
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    text-align: center;
+}
+.info-home h2{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.info-home p{
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgb(110, 104, 104);
+}
+.boxes{
+    display: flex;
+    padding: 23px;
+}
+.item{
+    width: 40%;
+    margin-right: 20px;
+}
+.item img{
+    margin-left: 120px;
+    width: 40%;
+    height: 25vh;
+    transition: transform 2s;
+    box-shadow: 5px 10px rgb(126, 126, 126);
+    filter: brightness(5) invert(0.2);
+}
+.item img:hover{
+    transform: scale(1.2);
+    filter: brightness(1) invert(0.1);
+}
+.item h2{
+    font-family: monospace;
+    font-size: 28px;
+    color: rgb(46, 45, 45);
+    padding-top: 20px;
+    text-align: center;
+}
+.item p{
+    text-align: center;
+    color: rgb(77, 75, 75);
+}
+
+.boxes2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 40px;
+}
+.gambar-icon{
+    width: 50%;
+}
+.gambar-icon img{
+    width: 40%;
+    margin-left: 90px;   
+}
+.icon-info-gambar{
+    width: 50%;
+}
+.icon-info-gambar p{
+    margin-top: 90px;
+    color: rgb(71, 70, 70);
+    font-size: 30px;
+}
+
+
+
+
+
+/* Style galery */
+.page-galery{
+    width: 100%;
+    height: auto;
+    background: url('../Image/yes/\(3\).jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.page-galery h1{
+    text-align: center;
+    padding-top: 125px;
+    font-weight: 900;
+	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 0px white, 8px 8px 0px rgba(0,0,0,0.8);
+}
+.gar-box{
+    width: 100%;
+    height: auto;
+}
+.gar-box h3{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-family: monospace; 
+}
+.dalam-gar-box{
+    display: flex;
+    margin: 30px;
+}
+.container {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    margin: 30px;
+} 
+.container img {
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.534);
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}  
+.container:hover .overlay {
+    opacity: 1;
+}
+
+
+
+/* style myteam */
+.myteam{
+    background: url('../Image/yes/\(2\).jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 110vh;
+    padding-top: 90px;
+    border: 0;
+    color: white;
+    text-align: center;
+}
+.myteam h2{
+    margin-top: 34px;
+}
+.boxes{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.domi{
+    width: 55%;
+    height: 450px;
+    padding: 20px 10px;
+}
+.dalam-domi{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px;
+    transition: transform 2s, color 2s;
+}
+.dalam-domi img{
+    transition: border-radius 2s, transform 2s;
+    margin-bottom: 20px;
+    width: 220px;
+    height: 220px;
+    border-radius: 0;
+    margin-top: 20px;
+}
+.dalam-domi:hover img{
+    transform: scale(1.1);
+    border-radius: 50%;
+}
+
+
+
+/* style edukatif */
+.edukatif{
+	width: 100%;
+    height: auto;
+    background: url('../Image/yes/\(1\).jpg');
+    background-size: cover;
+	color: white;
+	padding-top: 50px;
+}
+.edukatif h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+	padding-bottom: 30px;
+	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 0px white, 8px 8px 0px rgba(0,0,0,0.8);
+}
+.isi{
+	display: flex;
+    padding: 60px;
+}
+.isi2{
+	display: flex;
+    padding: 60px;
+    margin-left: 300px;
+    padding-top: 1px;
+}
+.penjelasan1, .penjelasan2{
+    color: white;	
+	width: 50%;
+	height: 100%;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 2%;
+	font-size: 18px;
+}
+.penjelasan{
+    color: white;	
+	width: 80%;
+	height: 100%;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 2%;
+	font-size: 18px;
+}
+.penjelasan1, .penjelasan, .penjelasan2 p{
+    font-size: 19px;
+}
+
+.continue-lendo {
+	color:rgb(252, 236, 92);
+	transition: all 0.5s ease;
+    text-decoration: none;
+	font-weight: 700; 
+}
+ 
+.continue-lendo:hover {
+    margin-left:10px;
+    border:  none;
+}
+/* style Content1 */
+.content1{
+    width: 100%;
+    height: auto;
+    padding: 70px;
+    background: url("../Image/yes/\(1\).jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+.dalam-content{
+    padding-top: 130px;
+}
+.dalam-content1{
+    padding-top: 20px;
+}
+.content1 h1{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+article{
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+
+
+/* style schol */
+.school{
+	width: 100%;
+	height: auto;
+    background: url('../Image/yes/1599292119234.jpg');
+    background-size: cover;
+	color: white;
+	text-align: center;
+}
+.school h1{
+	text-align: center;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 900;
+	-webkit-text-fill-color: transparent;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 0px white, 8px 8px 0px rgba(0,0,0,0.8);
+    padding-top: 140px;
+}
+.profil{
+	width: 100%;
+	height: auto;
+	text-align: left;
+	font-size: 25px;
+	font-family: sans-serif;
+}
+.profil{
+    padding: 20px 50px;
+    display: flex;
+}
+.logo-dan{
+    width: 50%;
+    height: auto;
+}
+.logo-dan img{
+    width: 50%;
+    height: 45vh;
+    margin: 40px;
+}
+.profil ul li{
+	text-align: left;
+}
+.profil ul li p{
+	margin-top: 20px;
+}
+
+
+.galery-sekolah{
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+.galery-sekolah h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: monospace; 
+}
+.conta-gale{
+    display: flex;
+    margin: 30px;
+    margin-left: 190px;
+    flex-wrap: wrap;
+}
+.gallery {
+    margin-right: 10px;
+    width: 20%;
+    border: 2px solid #c5bb00;
+}
+.gallery a{
+    border: none;
+}
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+/* Style footer */
+.awal-footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    color: black;
+    background: linear-gradient(57deg, #c5bb00, #ffffff);
+    padding: 80px;
+}
+.foter1, .foter2, .foter3{
+    width: 30%;
+    height: 50vh;
+    margin-left: 35px;
+}
+.foter1 h2, .foter2 h2, .foter3 h2{
+    border-bottom: 3px solid black;
+}
+.foter2 img{
+    margin-top: 30px;
+    width: 50%;
+}
+.gmbr1, .gmbr2, .gmbr3{
+    display: flex;
+}
+.gmbr1, .gmbr2{
+    border-bottom: 2px solid rgb(80, 78, 78);
+}
+.gmbr1 img, .gmbr2 img, .gmbr3 img{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    filter: brightness(2) invert(0.2);
+}
+.gmbr1 p, .gmbr2 p, .gmbr3 p{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.awal-footer-akhir{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+}
+.copi, .kopi2{
+    width: 50%;
+}
+.foter3 h3{
+    color: rgb(104, 105, 104);
+    margin-top: 20px;
+    margin-left: 29px;
+}
+form{
+    padding: 30px;
+    border-radius: 4px;
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: #ffffff;
+    width: 80px;
+    height: 40px;
+    color: #666666;
+}
+input[type=submit]:hover{
+    background-color: #c5bb00;
+    color: white;
+}

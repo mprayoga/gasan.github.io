@@ -1,0 +1,435 @@
+/* Responsive */
+@media (max-width: 992px){
+    header{
+        padding: 5px 50px;
+        background: linear-gradient(57deg, #c5bb00, #ffffff);
+    }
+    header .logo{
+        color: black;
+    }
+    header ul li a{
+        color: rgb(0, 0, 0);
+
+    }
+    header a.active,a:hover{
+        border: none;
+        transition: none;
+        border-bottom: 2px solid rgba(160, 160, 160, 0.788);
+    }
+    header a{
+        border: none;
+    }
+    header ul{
+        position: absolute;
+        top: 69px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        visibility: hidden;
+        background: rgb(209, 208, 208);
+        opacity: 0;
+    }
+    header.active ul{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+    header.active ul li a{
+        display: inline-block;
+        margin: 15px 0;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .toggle{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle::before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        box-shadow: 0 10px 0 #000;
+        transition: 0.5s;
+    }
+    .toggle::after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        transition: 0.5s;
+    }
+}
+
+
+@media (max-width: 760px){
+    .awal-footer{
+        display: inline;
+        background: none;
+    }
+    .foter1, .foter2, .foter3{
+        width: 90%;
+        height: auto;
+        background: linear-gradient(57deg, #c5bb00, #ffffff);
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .awal-footer-akhir{
+        display: flex;
+    }
+    .copi p, .kopi2 p{
+        font-size: 13px;
+    }
+    .awal-footer{
+        margin-top: 50px;
+    }
+    .logo-dan img{
+        height: 20vh;
+    }
+    .isi{
+        height: auto;
+    }
+    
+    .penjelasan1, .penjelasan2, .penjelasan3{
+        height: auto;
+    }
+    .item img{
+        width: 80%;
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 652px){
+    .home{
+        height: 100vh;
+    }
+    .home h1{
+        margin-top: 100px;
+        font-size: 40px;
+    }
+    .boxes{
+        display: inline;
+    }
+    .info-home{
+        padding: 20px;
+    }
+    .item img{
+        margin-left: 7.3em;   
+    }
+
+    .awal{
+        display: inline;
+    }
+    .myteam{
+        height: auto;
+    }
+    .domi{
+        margin-left: 150px;
+    }
+    .dalam-gar-box{
+        display: inline;
+       
+    }
+    .container{
+        margin-left: 160px;
+    }
+    .domi{
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+    }
+    .dalam-domi img{
+        width: 60%;
+        height: auto;
+    }
+    .school{
+        height: auto;
+    }
+    .profil{
+        display: inline;
+    }
+    .profil ul{
+        margin-left: 40px;
+    }
+    .logo-dan {
+        margin-left: 150px;
+    }
+    .logo-dan img{
+        width: 90%;
+        height:40vh;
+    }
+    .item{
+        margin-left: 200px;
+    }
+    .item img{
+        margin-left: 20px;
+    }
+    .boxes2{
+        display: inline;
+    }
+    .gambar-icon img{
+        margin-left: 260px;
+    }
+    .icon-info-gambar{
+        margin-left: 220px;
+    }
+    .conta-gale{
+        display: inline;
+    }
+    .gallery{
+        margin-left: 90px;
+        width: 69%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 537px){
+    .domi{
+        margin-left: 120px;
+    }
+    .container{
+        margin-left: 140px;
+    }
+    .logo-dan {
+        margin-left: 110px;
+    }
+    .logo-dan img{
+        width: 90%;
+        height:40vh;
+    }
+    .isi{
+        display: inline;
+    }
+    .penjelasan1, .penjelasan2, .penjelasan3{
+        width: 90%;
+        margin-left: 30px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .item{
+        width: 60%;
+        margin-left: 100px;
+    }
+    .item img{
+        margin-left: 80px;
+        width: auto;
+    }
+    .boxes2{
+        display: inline;
+    }
+    .gambar-icon img{
+        width: 80%;
+        height: auto;
+        margin-left: 150px;
+    }
+    .icon-info-gambar{
+        margin-left: 140px;
+    }
+    .isi2{
+        margin-left: 20px;
+        padding: 0;
+    }
+    .domi{
+        margin-left: 55px;
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 442px){
+    .container{
+        margin-left: 110px;
+    }
+    .domi{
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+    }
+    .dalam-domi img{
+        width: 80%;
+        height: auto;
+    }
+    .logo-dan {
+        margin-left: 80px;
+    }
+    .logo-dan img{
+        width: 100%;
+        height: 35vh;
+    }
+    .penjelasan1, .penjelasan2, .penjelasan3{
+        margin-left: 23px;
+    }
+    .foter1, .foter2, .foter3{
+        margin-left: 20px;
+    }
+    .gallery{
+        margin-left: 70px;
+    }
+    .item{
+        margin-left: 85px;
+    }
+    .item img{
+        margin-left: 50px;
+    }
+    .gambar-icon img{
+        width: 80%;
+        height: auto;
+        margin-left: 130px;
+    }
+    .icon-info-gambar{
+        margin-left: 100px;
+    }
+}
+
+
+@media (max-width: 411px){
+    .home{
+        height: auto;
+    }
+    .info-home{
+        padding: 20px;
+    }
+    
+    .item img{
+        margin-left: 40px;   
+    }
+    .container{
+        margin-left: 75px;
+    }
+    .container img{
+        width: 120%;
+    }
+    .awal-footer{
+        display: inline;
+        background: none;
+    }
+    .foter1, .foter2, .foter3{
+        width: 80%;
+        height: auto;
+        background: linear-gradient(57deg, #c5bb00, #ffffff);
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .awal-footer-akhir{
+        display: flex;
+    }
+    .copi p, .kopi2 p{
+        font-size: 13px;
+    }
+    .domi{
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+    }
+    .dalam-domi img{
+        width: 100%;
+        height: auto;
+    }
+    .container{
+        margin-left: 85px;
+    }
+}
+
+
+@media (max-width: 360px){
+    .home{
+        height: auto;
+        padding: 20px;
+    }
+    .home h1{
+        font-size: 33px;
+    }
+    .info-home{
+        padding: 20px;
+    }
+    .container{
+        margin-left: 60px;
+    }
+    .container img{
+        width: 130%;
+    }
+    .item img{
+        margin-left: 20px;
+    }
+    .awal-footer{
+        display: inline;
+        background: none;
+    }
+    .foter1, .foter2, .foter3{
+        width: 80%;
+        height: auto;
+        background: linear-gradient(57deg, #c5bb00, #ffffff);
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .awal-footer-akhir{
+        display: flex;
+    }
+    .copi p, .kopi2 p{
+        font-size: 13px;
+    }
+    .overlay { 
+        width: 130%;
+    }
+    .school{
+        width: 118%;
+    }
+    .logo-dan{
+        margin-left: 70px;
+    }
+    .edukatif h1{
+        font-size: 30px;
+    }
+    .icon-info-gambar{
+        width: auto;
+        margin-left: 70px;
+    }
+    .icon-info-gambar p{
+        margin-left: 1px;
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 320px){
+    .home{
+        height: auto;
+    }
+    .item img{
+        margin-left: 1px;   
+    }
+    .logo img{
+        width: 130%;
+    }
+    .content1{
+        padding: 10px;
+    }
+
+}
+
+
+@media (max-width: 265px){
+    header{
+        padding: 5px 50px;
+        background: rgb(255, 255, 255);
+    }
+    header .logo{
+        color: black;
+        font-size: 23px;
+    }
+    .penjelasan1, .penjelasan2, .penjelasan3{
+        margin-left: 14px;
+    }
+}
